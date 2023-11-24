@@ -360,7 +360,7 @@
                 @if($invoice->refinment_charge)
                     <tr>
                         <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
-                        <td class="text-right pl-0">{{ __('invoices::invoice.refinment_charge') }}</td>
+                        <td class="text-right pl-0">{{ __('invoices::invoice.refining_charge') }}</td>
                         <td class="text-right pr-0">
                             {{ $invoice->formatCurrency($invoice->refinment_charge) }}
                         </td>

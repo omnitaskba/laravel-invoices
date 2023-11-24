@@ -89,7 +89,7 @@ trait InvoiceHelpers
     */
     public function refinmentCharge(float $amount)
     {
-        $this->$refinment_charge = $amount;
+        $this->refinment_charge = $amount;
 
         return $this;
     }
