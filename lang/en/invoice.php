@@ -36,4 +36,6 @@ return [
     'paid'                   => 'Paid',
     'due'                    => 'Due',
     'page'                   => 'Page',
+    'processing_charge'      => 'Processing charge',
+    'refining_charge'        => 'Refining charge',
 ];

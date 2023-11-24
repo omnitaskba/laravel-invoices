@@ -36,4 +36,6 @@ return [
     'paid'                   => 'Plătit',
     'due'                    => 'Data scadentă',
     'page'                   => 'Pagină',
+    'processing_charge'      => 'Taxa de procesare',
+    'refining_charge'        => 'Taxa de rafinare',
 ];

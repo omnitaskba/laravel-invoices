@@ -36,4 +36,6 @@ return [
     'paid'                   => 'Zaplaceno',
     'due'                    => 'Splatnost',
     'page'                   => 'Strana',
+    'processing_charge'      => 'Poplatek za zpracování',
+    'refining_charge'        => 'Rafinační poplatek',
 ];

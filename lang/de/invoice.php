@@ -36,4 +36,6 @@ return [
     'paid'                   => 'Bezahlt',
     'due'                    => 'Fällig',
     'page'                   => 'Seite',
+    'processing_charge'      => 'Bearbeitungsgebühr',
+    'refining_charge'        => 'Raffiniergebühr',
 ];

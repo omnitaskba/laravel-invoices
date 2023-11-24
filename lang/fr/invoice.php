@@ -36,4 +36,6 @@ return [
     'paid'                   => 'Payé',
     'due'                    => 'Dû',
     'page'                   => 'Page',
+    'processing_charge'      => 'Frais de traitement',
+    'refining_charge'        => 'Frais de raffinage',
 ];

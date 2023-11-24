@@ -37,4 +37,6 @@ return [
     'paid'                   => 'Betaald',
     'due'                    => 'Openstaand',
     'page'                   => 'Side',
+    'processing_charge'      => 'Behandlingskostnad',
+    'refining_charge'        => 'Raffineringsladning',
 ];
