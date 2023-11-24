@@ -75,6 +75,26 @@ trait InvoiceHelpers
     }
 
     /**
+    * @return $this
+    */
+    public function processingCharge(float $amount)
+    {
+        $this->processing_charge = $amount;
+
+        return $this;
+    }
+
+    /**
+    * @return $this
+    */
+    public function refinmentCharge(float $amount)
+    {
+        $this->$refinment_charge = $amount;
+
+        return $this;
+    }
+
+    /**
      * @throws Exception
      *
      * @return $this
@@ -230,6 +250,22 @@ trait InvoiceHelpers
     public function hasShipping()
     {
         return ! is_null($this->shipping_amount);
+    }
+
+    /**
+    * @return bool
+    */
+    public function hasProcessingCharge()
+    {
+        return ! is_null($this->processing_charge);
+    }
+
+    /**
+    * @return bool
+    */
+    public function hasRefinmentCharge()
+    {
+        return ! is_null($this->refinment_charge);
     }
 
     /**

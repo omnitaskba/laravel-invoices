@@ -348,6 +348,24 @@
                         </td>
                     </tr>
                 @endif
+                @if($invoice->processing_charge)
+                    <tr>
+                        <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
+                        <td class="text-right pl-0">{{ __('invoices::invoice.processing_charge') }}</td>
+                        <td class="text-right pr-0">
+                            {{ $invoice->formatCurrency($invoice->processing_charge) }}
+                        </td>
+                    </tr>
+                @endif
+                @if($invoice->refinment_charge)
+                    <tr>
+                        <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
+                        <td class="text-right pl-0">{{ __('invoices::invoice.refinment_charge') }}</td>
+                        <td class="text-right pr-0">
+                            {{ $invoice->formatCurrency($invoice->refinment_charge) }}
+                        </td>
+                    </tr>
+                @endif
                     <tr>
                         <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
                         <td class="text-right pl-0">{{ __('invoices::invoice.total_amount') }}</td>
