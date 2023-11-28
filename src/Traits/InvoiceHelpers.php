@@ -346,7 +346,7 @@ trait InvoiceHelpers
             return sprintf('%s_%s', $this->series, $this->sequence);
         }
 
-        return sprintf('%s_%s_%s', Str::snake($name), $this->series, $this->sequence);
+        return sprintf('%s_%s_%s', Str::snake($this->filename ?: $name), $this->series, $this->sequence);
     }
 
     /**
