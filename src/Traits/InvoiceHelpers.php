@@ -208,7 +208,7 @@ trait InvoiceHelpers
      */
     public function filename(string $filename)
     {
-        $this->filename = $filename;
+        $this->filename = sprintf('%s.pdf', $filename);
 
         return $this;
     }
