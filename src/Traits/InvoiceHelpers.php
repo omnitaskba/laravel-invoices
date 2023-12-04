@@ -95,6 +95,16 @@ trait InvoiceHelpers
     }
 
     /**
+    * @return $this
+    */
+    public function shippingCharge(float $amount)
+    {
+        $this->shipping_charge = $amount;
+
+        return $this;
+    }
+
+    /**
      * @throws Exception
      *
      * @return $this

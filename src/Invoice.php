@@ -111,6 +111,11 @@ class Invoice
     public $refinment_charge;
 
     /**
+    * @var float
+    */
+    public $shipping_charge;
+
+    /**
      * @var float
      */
     public $total_taxes;
