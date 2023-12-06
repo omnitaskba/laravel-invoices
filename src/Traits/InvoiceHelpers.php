@@ -40,6 +40,13 @@ trait InvoiceHelpers
         return $this;
     }
 
+    public function lotNotes(string $lot_notes)
+    {
+        $this->lot_notes = $lot_notes;
+
+        return $this;
+    }
+
     public function logo(string $logo)
     {
         $this->logo = $logo;

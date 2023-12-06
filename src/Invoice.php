@@ -66,6 +66,11 @@ class Invoice
     public $notes;
 
     /**
+    * @var string
+    */
+    public $lot_notes;
+
+    /**
      * @var string
      */
     public $status;

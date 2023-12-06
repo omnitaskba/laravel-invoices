@@ -249,6 +249,12 @@
             </tbody>
         </table>
 
+        @if($invoice->notes)
+            <p>
+                Lot description: <br> {!! $invoice->lot_notes !!}
+            </p>
+        @endif
+
         {{-- Table --}}
         <table class="table table-items">
             <thead>
