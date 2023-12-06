@@ -249,7 +249,7 @@
             </tbody>
         </table>
 
-        @if($invoice->notes)
+        @if($invoice->lot_notes)
             <p>
                 Lot description: <br> {!! $invoice->lot_notes !!}
             </p>
