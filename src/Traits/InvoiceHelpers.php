@@ -94,6 +94,16 @@ trait InvoiceHelpers
     /**
     * @return $this
     */
+    public function advancedPayment(float $amount)
+    {
+        $this->$advanced_payment = $amount;
+
+        return $this;
+    }
+
+    /**
+    * @return $this
+    */
     public function refinmentCharge(float $amount)
     {
         $this->refinment_charge = $amount;
@@ -275,6 +285,14 @@ trait InvoiceHelpers
     public function hasProcessingCharge()
     {
         return ! is_null($this->processing_charge);
+    }
+
+    /**
+    * @return bool
+    */
+    public function hasAdvancedPayment()
+    {
+        return ! is_null($this->advanced_payment);
     }
 
     /**

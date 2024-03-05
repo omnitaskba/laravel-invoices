@@ -363,6 +363,15 @@
                         </td>
                     </tr>
                 @endif
+                @if($invoice->advanced_payment)
+                    <tr>
+                        <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
+                        <td class="text-right pl-0">Advanced payment</td>
+                        <td class="text-right pr-0">
+                            {{ $invoice->formatCurrency($invoice->advanced_payment) }}
+                        </td>
+                    </tr>
+                @endif
                 @if($invoice->refinment_charge)
                     <tr>
                         <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>

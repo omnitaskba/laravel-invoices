@@ -113,6 +113,11 @@ class Invoice
     /**
     * @var float
     */
+    public $advanced_payment;
+
+    /**
+    * @var float
+    */
     public $refinment_charge;
 
     /**
