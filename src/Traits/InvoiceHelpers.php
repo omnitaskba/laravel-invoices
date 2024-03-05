@@ -96,7 +96,7 @@ trait InvoiceHelpers
     */
     public function advancedPayment(float $amount)
     {
-        $this->$advanced_payment = $amount;
+        $this->advanced_payment = $amount;
 
         return $this;
     }
