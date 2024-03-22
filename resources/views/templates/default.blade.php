@@ -390,6 +390,7 @@
                         </td>
                     </tr>
                 @endif
+                @if($invoice->total_amount_paid)
                     <tr>
                         <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
                         <td class="text-right pl-0">{{ __('invoices::invoice.total_amount') }}</td>
@@ -397,6 +398,14 @@
                             {{ $invoice->formatCurrency($invoice->total_amount) }}
                         </td>
                     </tr>
+                @endif
+                <tr>
+                    <td colspan="{{ $invoice->table_columns - 2 }}" class="border-0"></td>
+                    <td class="text-right pl-0">{{ __('invoices::invoice.total_amount') }}</td>
+                    <td class="text-right pr-0 total-amount">
+                        {{ $invoice->formatCurrency($invoice->total_amount) }}
+                    </td>
+                </tr>
             </tbody>
         </table>
 

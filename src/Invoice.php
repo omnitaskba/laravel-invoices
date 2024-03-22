@@ -136,6 +136,11 @@ class Invoice
     public $total_amount;
 
     /**
+     * @var float
+     */
+    public $total_amount_paid;
+
+    /**
      * @var bool
      */
     public $hasItemUnits;

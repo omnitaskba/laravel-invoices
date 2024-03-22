@@ -185,6 +185,16 @@ trait InvoiceHelpers
     /**
      * @return $this
      */
+    public function totalAmountPaid(float $total_amount_paid)
+    {
+        $this->total_amount_paid = $total_amount_paid;
+
+        return $this;
+    }
+
+    /**
+     * @return $this
+     */
     public function seller(PartyContract $seller)
     {
         $this->seller = $seller;
@@ -309,6 +319,14 @@ trait InvoiceHelpers
     public function hasTotalAmount()
     {
         return ! is_null($this->total_amount);
+    }
+
+    /**
+     * @return bool
+     */
+    public function hasTotalPaidAmount()
+    {
+        return ! is_null($this->total_amount_paid);
     }
 
     /**
