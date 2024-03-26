@@ -61,6 +61,11 @@ class InvoiceItem
     public $tax_percentage;
 
     /**
+     * @var string
+     */
+    public $return_rate;
+
+    /**
      * InvoiceItem constructor.
      */
     public function __construct()
@@ -197,6 +202,17 @@ class InvoiceItem
     public function taxByPercent(float $amount)
     {
         $this->tax($amount, true);
+
+        return $this;
+    }
+
+    /**
+     * @param string $return_rate
+     * @return $this
+     */
+    public function returnRate(string $return_rate)
+    {
+        $this->return_rate = $return_rate;
 
         return $this;
     }
